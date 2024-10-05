@@ -192,8 +192,6 @@ def add_l10_ppg_column(input_csv_path, output_csv_path):
     df_sorted.to_csv(output_csv_path, index=False)
 
 
-import pandas as pd
-
 def add_opp_pts_column(input_csv_path, output_csv_path):
     # Load the data from CSV file
     df = pd.read_csv(input_csv_path)
@@ -248,8 +246,6 @@ def add_l10_opp_ppg(input_csv, output_csv):
 
 
 
-import pandas as pd
-
 def add_l10_fg_pct(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -280,8 +276,6 @@ def add_l10_fg_pct(input_csv_path, output_csv_path):
 
 
 
-import pandas as pd
-
 # Function to round l10_ppg and opp_l10_ppg to the nearest tenth
 def round_ppg_columns(input_csv_path, output_csv_path):
     # Load the data from CSV file
@@ -294,9 +288,6 @@ def round_ppg_columns(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df.to_csv(output_csv_path, index=False)
 
-
-
-import pandas as pd
 
 
 def add_l10_fg3_pct(input_csv_path, output_csv_path):
@@ -326,9 +317,6 @@ def add_l10_fg3_pct(input_csv_path, output_csv_path):
 
     # Save the updated DataFrame to a new CSV file
     df_sorted.to_csv(output_csv_path, index=False)
-
-
-import pandas as pd
 
 
 def add_opp_fg_pct(input_csv_path, output_csv_path):
@@ -361,9 +349,6 @@ def add_opp_fg_pct(input_csv_path, output_csv_path):
 
     # Save the updated DataFrame to a new CSV file
     df.to_csv(output_csv_path, index=False)
-
-
-import pandas as pd
 
 
 def add_opp_fg3_pct(input_csv_path, output_csv_path):
@@ -399,10 +384,6 @@ def add_opp_fg3_pct(input_csv_path, output_csv_path):
 
 
 
-
-import pandas as pd
-
-
 def add_opp_l10_fg_pct(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -433,9 +414,6 @@ def add_opp_l10_fg_pct(input_csv_path, output_csv_path):
 
 
 
-import pandas as pd
-
-
 def add_opp_l10_fg3_pct(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -464,9 +442,6 @@ def add_opp_l10_fg3_pct(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df_sorted.to_csv(output_csv_path, index=False)
 
-
-
-import pandas as pd
 
 def add_opp_tov(input_csv_path, output_csv_path):
     # Load the data from CSV file
@@ -500,9 +475,6 @@ def add_opp_tov(input_csv_path, output_csv_path):
     df.to_csv(output_csv_path, index=False)
 
 
-
-import pandas as pd
-
 def add_l10_tov(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -531,9 +503,6 @@ def add_l10_tov(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df_sorted.to_csv(output_csv_path, index=False)
 
-
-
-import pandas as pd
 
 def add_opp_l10_tov(input_csv_path, output_csv_path):
     
@@ -564,9 +533,6 @@ def add_opp_l10_tov(input_csv_path, output_csv_path):
     df_sorted.to_csv(output_csv_path, index=False)
 
 
-
-import pandas as pd
-
 def add_net_wins(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -595,9 +561,6 @@ def add_net_wins(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df_sorted.to_csv(output_csv_path, index=False)
 
-
-
-import pandas as pd
 
 def add_opp_net_wins(input_csv_path, output_csv_path):
     # Load the data from CSV file
@@ -631,9 +594,6 @@ def add_opp_net_wins(input_csv_path, output_csv_path):
     df.to_csv(output_csv_path, index=False)
 
 
-
-
-import pandas as pd
 
 def add_l10_opp_net_wins(input_csv_path, output_csv_path):
     
@@ -669,9 +629,6 @@ def add_l10_opp_net_wins(input_csv_path, output_csv_path):
 
 
 
-
-import pandas as pd
-
 def add_win_differential(input_csv_path, output_csv_path):
     
     # Load the data from CSV file
@@ -700,9 +657,6 @@ def add_win_differential(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df_sorted.to_csv(output_csv_path, index=False)
 
-
-
-import pandas as pd
 
 def add_opp_pts_column(input_csv_path, output_csv_path):
     # Load the data from CSV file
@@ -735,8 +689,6 @@ def add_opp_pts_column(input_csv_path, output_csv_path):
     # Save the updated DataFrame to a new CSV file
     df.to_csv(output_csv_path, index=False)
 
-import pandas as pd
-
 def remove_features_and_save_new_file(original_csv_path, features_to_remove, new_csv_path):
     """
     Removes specified features from a CSV file and saves the result to a new file.
@@ -765,8 +717,6 @@ def remove_features_and_save_new_file(original_csv_path, features_to_remove, new
 
 # Example usage:
 
-import pandas as pd
-
 def shift_team_stats(csv_path, output_path):
     # Load CSV data into a DataFrame
     df = pd.read_csv(csv_path)
@@ -785,8 +735,6 @@ def shift_team_stats(csv_path, output_path):
 
 
 # Example usage:
-
-import csv
 
 def merge_csv_columns(first_csv_path, second_csv_path, output_csv_path):
     # Read data from the first CSV and store the required fields in a dictionary
@@ -826,9 +774,6 @@ second_csv_file = r'C:\Users\Joseph\Downloads\archive\sorted_l10ai.csv'
 output_csv_file = r'C:\Users\Joseph\Downloads\archive\FINALLY.csv'
 
 
-
-
-import csv
 
 def remove_second_instance(input_filename, output_filename):
     with open(input_filename, 'r', newline='', encoding='utf-8') as infile, \
